@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luas Tabung</title>
+    <style>
+        input.myn {
+            color: darkcyan;
+            background: lightyellow;
+            border: 1px outset black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: auto;
+        }
+        
+        .pth {
+            background-color: lightblue;
+        }
+    </style>
+
+
+</head>
+
+<body class="pth">
+    <center>
+        <b><font color="lightcoral" size="6">
+    <p>LUAS TABUNG</p>
+    <form id="Hitungan" name="hitungan" method="post" action="">
+                    <table width="500" border="0">
+                    <tr>
+                    <td width="200"><b><font color="lightcoral" size="6">JARI-JARI</td>
+                    <td><input name="jarijari" type="text" id="jarihari"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td width="200"><b><font color="lightcoral" size="6">TINGGI</td>
+                    <td><input name="tinggi" type="text" id="tinggi"></td>
+                    </tr>
+
+                    <tr>
+                    <td><b><font color="lightcoral" size="6">HASIL</td>
+                    <td><input name="luas" type="text" id="luas"></td>
+                    </tr>
+    </table>
+
+
+    <p>
+        <input name="cari" type="button" id="cari" value="Jawaban" class="myn"
+        onclick="cariltbng()"/>
+        </p>
+        </form>
+
+        <script laguage="javascript">
+        function cariltbng()
+        {
+        jarijari=hitungan.jarijari.value;
+        jarijari=hitungan.jarijari.value;
+        tinggi=hitungan.tinggi.value;
+        hitungan.luas.value= 3.14*jarijari*jarijari;
+        }
+        </script>
+
+</body>
+</html>

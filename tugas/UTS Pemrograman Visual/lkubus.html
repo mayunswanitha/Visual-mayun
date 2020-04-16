@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luas Kubus</title>
+    <style>
+        input.myn {
+            color: green;
+            background-color: khaki;
+            border: 1px outset black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: auto;
+        }
+        
+        .isww {
+            background-color: turquoise;
+        }
+    </style>
+
+
+</head>
+
+<body class="isww">
+    <center>
+        <b><font color="maroon" size="6">
+<p>LUAS KUBUS</p>
+<form id="Hitungan" name="hitungan" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="200"><b><font color="maroon" size="6">SISI</td>
+                <td><input name="sisi" type="text" id="sisi"></td>
+                </tr>
+               
+                <tr>
+                <td><b><font color="maroon" size="6">HASIL</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+</table>
+
+
+<p>
+    <input name="cari" type="button" id="cari" value="Jawaban" class="myn"
+    onclick="carilkbs()"/>
+</p>
+</form>
+</center>
+
+<script laguage="javascript">
+function carilkbs()
+{
+sisi=hitungan.sisi.value
+sisi=hitungan.sisi.value
+sisi=hitungan.sisi.value
+hitungan.luas.value= 6*sisi*sisi;
+}
+</script>
+
+</body>
+</html>

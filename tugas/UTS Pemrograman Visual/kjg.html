@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keliling Jajar Genjang</title>
+    <style>
+        input.myn {
+            color: black;
+            background-color: cadetblue;
+            border: 1px outset black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: auto;
+        }
+        
+        .ily {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body class="ily">
+    <center>
+        <b><font color="darkgreen" size="6">
+
+<p>KELILING JAJAR GENJANG</p>
+
+<form id="Hitungan" name="hitungan" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="200"><b><font color="darkgreen" size="6">ALAS</td>
+                <td><input name="alas" type="text" id="alas"></td>
+                </tr>
+                <tr>
+                <td width="200"><b><font color="darkgreen" size="6">TINGGI</td>
+                <td><input name="tinggi" type="text" id="tinggi"></td>
+                </tr>
+                <tr>
+                <td><b><font color="darkgreen" size="6">HASIL</td>
+                <td><input name="keliling" type="text" id="keliling"></td>
+                </tr>
+</table>
+
+<p>
+<input name="cari" type="button" id="cari" value="Jawaban" class="myn"
+onclick="carikjg()"/>
+</p>
+
+</form>
+
+
+<script laguage="javascript">
+function carikjg()
+{
+alas=hitungan.alas.value;
+tinggi=hitungan.tinggi.value;
+hitungan.keliling.value=2*(alas*tinggi);
+}
+</script>
+</body>
+</html>

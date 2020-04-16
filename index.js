@@ -107,7 +107,6 @@ const menuTemplate = [{
         label: "File",
         submenu: [{
                 label: "New Appointment",
-
                 click() {
                     createWindowCreator();
                 }

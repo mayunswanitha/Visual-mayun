@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luas Prisma Segitiga</title>
+    <style>
+        input.myn {
+            color: red;
+            background: white;
+            border: 1px outset black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: auto;
+        }
+        
+        .myns {
+            background-color: cornsilk;
+        }
+    </style>
+
+
+</head>
+
+<body class="myns">
+    <center>
+        <b><font color="grey" size="6">
+    <p>LUAS PRISMA SEGITIGA</p>
+    <form id="Hitungan" name="hitungan" method="post" action="">
+                    <table width="500" border="0">
+                    <tr>
+                    <td width="200"><b><font color="grey" size="6">TINGGI SEGITIGA</td>
+                    <td><input name="tinggi" type="text" id="tinggi"></td>
+                    </tr>
+                    <tr>
+                    <td width="200"><b><font color="grey" size="6">ALAS PRISMA</td>
+                    <td><input name="alas" type="text" id="alas"></td>
+                    </tr>
+                    <tr>
+                    <td width="200"><b><font color="grey" size="6">TINGGI PRISMA</td>
+                    <td><input name="tinggiprisma" type="text" id="tinggiprisma"></td>
+                    </tr>
+                    <tr>
+                    <td><b><font color="grey" size="6">HASIL</td>
+                    <td><input name="luas" type="text" id="luas"></td>
+                    </tr>
+    </table>
+
+
+    <p>
+        <p>
+            <input name="cari" type="button" id="cari" value="Jawaban" class="myn"
+            onclick="carilps()"/>
+            </p>
+            </form>
+            <p>&nbsp;</p>
+
+            <script laguage="javascript">
+            function carilps()
+            {
+
+            tinggi=hitungan.tinggi.value;
+            alas=hitungan.alas.value;
+            tinggiprisma=hitungan.tinggiprisma.value;
+            hitungan.luas.value = (tinggi*alas) + (3*tinggiprisma);
+            }
+        </script>
+
+</body>
+</html>
